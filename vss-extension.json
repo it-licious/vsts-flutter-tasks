@@ -1,6 +1,6 @@
 {
     "manifestVersion": 1,
-    "id": "flutter",
+    "id": "flutter-itlicious",
     "version": "0.1.0",
     "name": "Flutter",
     "description": "Flutter extension for Azure DevOps",
