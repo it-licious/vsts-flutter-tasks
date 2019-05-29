@@ -58,7 +58,7 @@ Launch tests and publish a report as build test results.
 ## Contribute
 
 ### Install
-'''
+```javascrpt
 npm install @types/node
 npm install @types/q
-'''
+```
