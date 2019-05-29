@@ -1,6 +1,6 @@
 {
   "name": "fluttertest",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Flutter Test Task",
   "main": "index.js",
   "scripts": {
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aloisdeniel/vsts-flutter-tasks.git"
+    "url": "git+https://github.com/it-licious/vsts-flutter-tasks.git"
   },
-  "author": "Aloïs Deniel",
+  "author": "itlicious",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/aloisdeniel/vsts-flutter-tasks/issues"
+    "url": "https://github.com/it-licious/vsts-flutter-tasks/issues"
   },
-  "homepage": "https://github.com/aloisdeniel/vsts-flutter-tasks#readme",
+  "homepage": "https://github.com/it-licious/vsts-flutter-tasks#readme",
   "dependencies": {
     "vsts-task-lib": "2.7.0",
     "vsts-task-tool-lib": "*",

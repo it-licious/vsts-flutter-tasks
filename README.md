@@ -2,17 +2,13 @@
 
 [Flutter](http://flutter.io) build task for [Azure DevOps](https://azure.microsoft.com/fr-fr/services/devops/).
 
-## Installation
-
-Installation can be done using [Visual Studio MarketPlace](https://marketplace.visualstudio.com/items?itemName=aloisdeniel.flutter).
-
 ## Source Code
 
-Source code can be found on [Github](https://github.com/aloisdeniel/vsts-flutter-tasks).
+Original source code is forked from [Github](https://github.com/aloisdeniel/vsts-flutter-tasks). This repo will focus on adding functionality to tasks we need for building apps within IT Licious. Features that might seem handy for other people will be provided back to the original repo as pull requests.
 
 ## Usage
 
-Add the tasks to your build definition.
+Add the tasks to your build definition in Azure Devops.
 
 ### Install
 
