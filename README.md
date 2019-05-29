@@ -54,3 +54,11 @@ Launch tests and publish a report as build test results.
 ## License
 
 [MIT](https://raw.githubusercontent.com/aloisdeniel/vsts-flutter-tasks/master/LICENSE)
+
+## Contribute
+
+### Install
+'''
+npm install @types/node
+npm install @types/q
+'''
