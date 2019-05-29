@@ -1,15 +1,15 @@
 {
-    "id": "6bee7ef4-7576-42da-b464-c654d0ef0cb9",
+    "id": "654db2d9-9764-48db-8519-66726b91a7b8",
     "name": "FlutterTest",
     "friendlyName": "Flutter Test",
     "description": "Executes all tests for a Flutter project.",
     "helpMarkdown": "For more information, take a look at the Flutter [documentation](https://flutter.io)",
     "category": "Test",
-    "author": "Aloïs Deniel",
+    "author": "itlicious",
     "version": {
         "Major": 0,
-        "Minor": 2,
-        "Patch": 15
+        "Minor": 1,
+        "Patch": 0
     },
     "instanceNameFormat": "Flutter Test",
     "inputs": [

@@ -1,5 +1,5 @@
 {
-    "id": "10a2efb1-b922-4849-81de-bccd2537ccc1",
+    "id": "2e270fde-05e8-45fd-94ea-af284f8eb6bb",
     "name": "FlutterBuild",
     "friendlyName": "Flutter Build",
     "description": "Build a Flutter application project.",
@@ -8,11 +8,11 @@
     "visibility": [
         "Build"
     ],
-    "author": "Aloïs Deniel",
+    "author": "itlicious",
     "version": {
         "Major": 0,
-        "Minor": 2,
-        "Patch": 15
+        "Minor": 1,
+        "Patch": 0
     },
     "groups": [],
     "instanceNameFormat": "Flutter Build $(target)",

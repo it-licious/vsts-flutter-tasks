@@ -1,10 +1,10 @@
 {
     "manifestVersion": 1,
     "id": "flutter",
-    "version": "0.2.15",
+    "version": "0.1.0",
     "name": "Flutter",
     "description": "Flutter extension for Azure DevOps",
-    "publisher": "aloisdeniel",
+    "publisher": "itlicious",
     "public": true,
     "targets": [
         {
@@ -28,12 +28,12 @@
     },
     "links": {
         "support": {
-            "uri": "https://github.com/aloisdeniel/vsts-flutter-tasks/issues"
+            "uri": "https://github.com/it-licious/vsts-flutter-tasks/issues"
         }
     },
     "repository": {
         "type": "git",
-        "uri": "https://github.com/aloisdeniel/vsts-flutter-tasks"
+        "uri": "https://github.com/it-licious/vsts-flutter-tasks"
     },
     "tags": [
         "flutter",
