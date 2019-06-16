@@ -32,6 +32,7 @@ Build the given mobile application project. You must call the `Flutter Install` 
 * _(Optional)_. Set `package name` (like `1.2.3`) that will override the manifest's one.
 * _(Optional)_. Set `package number` (like `12`) that will override the manifest's one.
 * _(Optional)_. Set `build flavour` (like `development`) to specify a build flavour.  Must match Android Gradle flavor definition or XCode scheme.
+* _(Optional)_. Set `build optional command` (like `lib/config/production.dart`) to specify an optional command to append to the build task. This can be anything you want. 
 * _(Optional)_. Set `debug` if you wish to override the default release mode for the build.
 * __(Android)__._(Optional)_. Set `platform` for the Android target: `android-arm (default)`, `android-arm64`.
 * __(iOS)__._(Optional)_. Set `platform` for the iOS target: `device (default)`, `simulator`.
@@ -61,4 +62,11 @@ Launch tests and publish a report as build test results.
 ```javascrpt
 npm install @types/node
 npm install @types/q
+```
+
+### Build packages and Deploy
+To create vsix file to upload to market place
+Mac: 
+```
+sudo sh publish.sh
 ```
