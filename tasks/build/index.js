@@ -33,20 +33,21 @@ function main() {
         let buildName = task.getInput('buildName', false);
         let buildNumber = task.getInput('buildNumber', false);
         let buildFlavour = task.getInput('buildFlavour', false);
+        let buildOptionalCommand = task.getInput('buildOptionalCommand', false);
         // 5. Builds
         if (target === "all" || target === "ios") {
             let targetPlatform = task.getInput('iosTargetPlatform', false);
             let codesign = task.getBoolInput('iosCodesign', false);
-            yield buildIpa(flutterPath, targetPlatform == "simulator", codesign, buildName, buildNumber, debugMode, buildFlavour);
+            yield buildIpa(flutterPath, targetPlatform == "simulator", codesign, buildName, buildNumber, debugMode, buildFlavour, buildOptionalCommand);
         }
         if (target === "all" || target === "apk") {
             let targetPlatform = task.getInput('apkTargetPlatform', false);
-            yield buildApk(flutterPath, targetPlatform, buildName, buildNumber, debugMode, buildFlavour);
+            yield buildApk(flutterPath, targetPlatform, buildName, buildNumber, debugMode, buildFlavour, buildOptionalCommand);
         }
         task.setResult(task.TaskResult.Succeeded, "Application built");
     });
 }
-function buildApk(flutter, targetPlatform, buildName, buildNumber, debugMode, buildFlavour) {
+function buildApk(flutter, targetPlatform, buildName, buildNumber, debugMode, buildFlavour, buildOptionalCommand) {
     return __awaiter(this, void 0, void 0, function* () {
         var args = [
             "build",
@@ -67,13 +68,16 @@ function buildApk(flutter, targetPlatform, buildName, buildNumber, debugMode, bu
         if (buildFlavour) {
             args.push("--flavor=" + buildFlavour);
         }
+        if (buildOptionalCommand) {
+            args.push(buildOptionalCommand);
+        }
         var result = yield task.exec(flutter, args);
         if (result !== 0) {
             throw new Error("apk build failed");
         }
     });
 }
-function buildIpa(flutter, simulator, codesign, buildName, buildNumber, debugMode, buildFlavour) {
+function buildIpa(flutter, simulator, codesign, buildName, buildNumber, debugMode, buildFlavour, buildOptionalCommand) {
     return __awaiter(this, void 0, void 0, function* () {
         var args = [
             "build",
@@ -101,6 +105,9 @@ function buildIpa(flutter, simulator, codesign, buildName, buildNumber, debugMod
             if (buildFlavour) {
                 args.push("--flavor=" + buildFlavour);
             }
+        }
+        if (buildOptionalCommand) {
+            args.push(buildOptionalCommand);
         }
         var result = yield task.exec(flutter, args);
         if (result !== 0) {

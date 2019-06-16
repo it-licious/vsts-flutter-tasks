@@ -79,6 +79,14 @@
             "helpMarkDown": "An `x.y.z` string used as the version number shown to users. For each new version of your app, you should provide a version number to differentiate it from previous versions."
         },
         {
+            "name": "buildOptionalCommand",
+            "type": "string",
+            "label": "Optional command",
+            "defaultValue": "",
+            "required": false,
+            "helpMarkDown": "Add an optional (additional) command to the build, this is a free text command."
+        },
+        {
             "name": "apkTargetPlatform",
             "type": "pickList",
             "label": "Target platform architecture",

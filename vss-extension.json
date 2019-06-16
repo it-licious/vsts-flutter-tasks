@@ -5,14 +5,14 @@
     "name": "Flutter",
     "description": "Flutter extension for Azure DevOps",
     "publisher": "itlicious",
-    "public": true,
+    "public": false,
     "targets": [
         {
             "id": "Microsoft.VisualStudio.Services"
         }
     ],
     "categories": [
-        "Pipelines"
+        "Azure Pipelines"
     ],
     "icons": {
         "default": "icon.png"
